@@ -1,155 +1,116 @@
-# Term-Deposit-Prediction-app
-Repository for Term-Deposit-Prediction app
-
 # 📈 Bank Marketing Subscription Prediction
 
 ## 🚀 Project Highlights
 
-- Built and evaluated **4 machine learning classification models**
+- Built, evaluated, and compared **four machine learning classification models**
 - Conducted comprehensive **Exploratory Data Analysis (EDA)**
-- Applied **data preprocessing** and **feature engineering**
-- Optimised the final model using **RandomizedSearchCV**
-- Selected **Random Forest** as the final deployment model
+- Applied data preprocessing and feature engineering techniques
+- Optimised the final Random Forest model using **RandomizedSearchCV**
 - Deployed the trained model as an interactive **Streamlit** web application
 
 ---
 
-# Project Overview
+# 📖 Project Overview
 
-Direct marketing campaigns are commonly used by banks to promote term deposit subscriptions. However, contacting every customer can be both costly and inefficient. This project develops a machine learning-based decision support system capable of predicting whether a customer is likely to subscribe to a term deposit before a marketing campaign is conducted.
+This project was developed as part of the **Machine Learning for Developers** module.
 
-The project follows the complete machine learning development lifecycle, including business understanding, exploratory data analysis (EDA), data preprocessing, model development, feature engineering, hyperparameter tuning, model evaluation, and deployment using Streamlit. Multiple machine learning algorithms were evaluated before selecting the final deployment model based on predictive performance and business suitability.
+The objective of this project is to develop a machine learning model capable of predicting whether a customer is likely to subscribe to a bank term deposit. The solution helps banks identify potential customers before conducting direct marketing campaigns, allowing marketing resources to be allocated more effectively.
 
----
-
-# Business Problem
-
-
-Banks conduct direct marketing campaigns to encourage customers to subscribe to term deposits. Since marketing resources are limited, contacting every customer may result in unnecessary costs and lower campaign efficiency.
-
-By predicting which customers are more likely to subscribe, banks can prioritise potential customers, improve marketing effectiveness, reduce operational costs, and increase campaign success rates.
-
-This project formulates term deposit subscription prediction as a **binary classification problem**, where the objective is to predict whether a customer will subscribe to a term deposit.
+The project follows the complete machine learning development lifecycle, including exploratory data analysis (EDA), data preprocessing, model development, hyperparameter tuning, model evaluation, and deployment using Streamlit.
 
 ---
 
-# Dataset
+# 💼 Business Problem
 
-This project uses the **Bank Marketing Dataset** obtained from the **UCI Machine Learning Repository**. The dataset contains customer demographic information, previous marketing campaign details, and economic indicators collected from a Portuguese banking institution.
+Banks regularly conduct direct marketing campaigns to promote term deposits. Contacting every customer is both time-consuming and costly, while many customers may have little interest in subscribing.
+
+By predicting which customers are more likely to subscribe, banks can focus their marketing efforts on high-potential customers, improving campaign effectiveness while reducing operational costs.
+
+This project formulates term deposit subscription prediction as a **binary classification problem**.
+
+---
+
+# 📊 Dataset
+
+The project uses the **Bank Marketing Dataset** obtained from the **UCI Machine Learning Repository**.
 
 | Attribute | Description |
 |-----------|-------------|
 | Dataset | Bank Marketing Dataset |
 | Source | UCI Machine Learning Repository |
 | Number of Records | 41,188 |
-| Number of Features | 20 Input Features |
+| Number of Input Features | 20 |
 | Target Variable | y |
 | Problem Type | Binary Classification |
 
-The dataset was selected because it represents a realistic business problem where financial institutions aim to improve marketing effectiveness using historical customer information.
+The dataset contains customer demographic information, previous marketing campaign details, and economic indicators collected during direct marketing campaigns conducted by a Portuguese banking institution.
 
 ---
 
-# Exploratory Data Analysis
+# 🤖 Machine Learning Approach
 
-Exploratory Data Analysis (EDA) was conducted to understand the characteristics of the dataset before model development.
+The project follows a standard supervised machine learning workflow:
 
-Several important observations were identified, including:
+- Exploratory Data Analysis (EDA)
+- Data preprocessing
+- Feature engineering
+- Model training
+- Model comparison
+- Hyperparameter tuning using RandomizedSearchCV
+- Streamlit deployment
 
-- Distribution of customer demographics
-- Marketing campaign characteristics
-- Relationships between customer attributes and subscription outcomes
-- Correlations among numerical variables
-- Class imbalance within the target variable
-
-These findings provided useful business insights and guided the subsequent preprocessing and model development process.
-
----
-
-# Data Preprocessing
-
-Several preprocessing techniques were applied before training the machine learning models:
-
-- Removed duplicate records
-- Removed the `duration` feature to prevent data leakage
-- Treated `unknown` values as valid categories
-- One-Hot Encoded categorical variables
-- Standardised numerical features using StandardScaler
-- Split the dataset into training and testing sets
-
-These preprocessing steps ensured that the dataset was suitable for machine learning while preventing information leakage and maintaining consistency during deployment.
-
----
-
-# Machine Learning Models
-
-Four supervised machine learning algorithms were evaluated in this project:
+Four classification algorithms were evaluated:
 
 - Logistic Regression
 - Decision Tree
 - Random Forest
 - Gradient Boosting
 
-The models were compared using appropriate classification metrics to identify the most suitable model for predicting customer subscriptions.
+---
+
+# 🏆 Final Model
+
+After comparing multiple machine learning models, the **Random Forest** classifier was selected as the final deployment model.
+
+The model was further optimised using **RandomizedSearchCV**, resulting in improved predictive performance. It was chosen based on its overall performance and suitability for the business problem.
 
 ---
 
-# Hyperparameter Tuning
+# 🌐 Streamlit Application
 
-To improve predictive performance, **RandomizedSearchCV** was applied to optimise the Random Forest model by searching for better hyperparameter combinations.
+The trained machine learning model was deployed using **Streamlit** to provide an interactive prediction tool.
 
-The tuned Random Forest model achieved the best overall performance and was selected as the final deployment model.
+### Features
 
----
-
-# Final Model Selection
-
-Although multiple machine learning algorithms were evaluated throughout this project, **Random Forest** was selected as the final deployment model.
-
-The decision was based on:
-
-- Strong overall predictive performance
-- Good balance between Precision, Recall and F1-score
-- Robust performance on unseen testing data
-- Suitability for the business problem
-
-The selected model provides reliable predictions while supporting effective marketing decision-making.
-
----
-
-# Streamlit Deployment
-
-To demonstrate the practical application of the trained machine learning model, the final Random Forest model was deployed using **Streamlit**.
-
-The web application allows users to enter customer information and instantly receive a prediction indicating whether the customer is likely to subscribe to a term deposit.
-
-### Key Features
-
-- Interactive customer information input
+- Customer information input
+- Marketing campaign information input
+- Economic indicator input
 - Real-time subscription prediction
 - Prediction probability display
-- Business recommendation based on prediction
+- Recommendation based on prediction results
 - User-friendly interface suitable for non-technical users
 
 ---
 
-# Application Preview
+## 🖼️ Application Preview
 
-## Homepage
+### Home Page
 
-*(Insert Screenshot Here)*
-
-## Positive Prediction Example
-
-*(Insert Screenshot Here)*
-
-## Negative Prediction Example
-
-*(Insert Screenshot Here)*
+![Homepage](Images/Homepage.jpg)
 
 ---
 
-# Repository Structure
+### Successful Prediction
+
+![Successful Prediction](Images/Successful.jpg)
+
+---
+
+### Unsuccessful Prediction
+
+![Unsuccessful Prediction](Images/Unsuccessful.jpg)
+
+# 📂 Repository Structure
 
 ```text
 Bank-Marketing-Prediction/
@@ -166,7 +127,7 @@ Bank-Marketing-Prediction/
 
 ---
 
-# Installation
+# ⚙️ Installation
 
 Clone the repository:
 
@@ -174,13 +135,13 @@ Clone the repository:
 git clone https://github.com/yourusername/Bank-Marketing-Prediction.git
 ```
 
-Navigate into the project directory:
+Navigate to the project folder:
 
 ```bash
 cd Bank-Marketing-Prediction
 ```
 
-Install the required packages:
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -194,7 +155,7 @@ streamlit run app.py
 
 ---
 
-# Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - Streamlit
@@ -206,7 +167,7 @@ streamlit run app.py
 
 ---
 
-# References
+# 📚 References
 
 - UCI Machine Learning Repository – Bank Marketing Dataset
 - Scikit-learn Documentation
@@ -216,10 +177,6 @@ streamlit run app.py
 
 ---
 
-# Conclusion
+# 👨‍💻 Author
 
-This project demonstrates how machine learning can support banking institutions in improving the effectiveness of direct marketing campaigns. Through data preprocessing, exploratory data analysis, model comparison, hyperparameter tuning, and deployment, the final Random Forest model provides a practical decision support tool capable of predicting customer subscription likelihood.
-
-The deployed Streamlit application transforms the trained machine learning model into an interactive and user-friendly solution, illustrating how predictive analytics can assist organisations in making more informed, data-driven marketing decisions.
-
----
+**Stanly Tan**
