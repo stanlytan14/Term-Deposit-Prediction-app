@@ -113,16 +113,19 @@ The trained machine learning model was deployed using **Streamlit** to provide a
 # 📂 Repository Structure
 
 ```text
-Bank-Marketing-Prediction/
+stanly-tan/
 │
-├── app.py
-├── bank_marketing.ipynb
+├── Images/
+│   ├── Homepage.jpg
+│   ├── Successful.jpg
+│   └── Unsuccessful.jpg
+│
+├── BankMarketing.xlsx
 ├── final_random_forest_model.pkl
-├── one_hot_encoder.pkl
 ├── model_feature_columns.pkl
-├── requirements.txt
-├── README.md
-└── screenshots/
+├── one_hot_encoder.pkl
+├── project.ipynb
+└── README.md
 ```
 
 ---
