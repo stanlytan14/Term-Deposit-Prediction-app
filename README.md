@@ -126,35 +126,6 @@ stanly-tan/
 ├── one_hot_encoder.pkl
 ├── project.ipynb
 └── README.md
-```
-
----
-
-# ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/Bank-Marketing-Prediction.git
-```
-
-Navigate to the project folder:
-
-```bash
-cd Bank-Marketing-Prediction
-```
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the Streamlit application:
-
-```bash
-streamlit run app.py
-```
 
 ---
 
