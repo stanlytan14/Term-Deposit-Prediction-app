@@ -126,6 +126,7 @@ stanly-tan/
 ├── one_hot_encoder.pkl
 ├── project.ipynb
 └── README.md
+```
 
 ---
 
@@ -138,16 +139,6 @@ stanly-tan/
 - Scikit-learn
 - Joblib
 - Matplotlib
-
----
-
-# 📚 References
-
-- UCI Machine Learning Repository – Bank Marketing Dataset
-- Scikit-learn Documentation
-- Streamlit Documentation
-- Pandas Documentation
-- NumPy Documentation
 
 ---
 
